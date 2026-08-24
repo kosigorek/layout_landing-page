@@ -2,7 +2,13 @@
 @import '../utils/mixins';
 
 
+html, body, .main {
+  scroll-behavior: smooth !important;
+}
 
+body:has(#menu:target) {
+  overflow: hidden;
+}
 .page {
   display: flex;
   flex-direction: column;
