@@ -68,6 +68,15 @@
     pointer-events: none;
     transition: opacity $effectDuration ease, visibility $effectDuration ease;
 
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: -20px;
+      width: 20px;
+      height: 100%;
+    }
+
     @include onTabletOnly {
       display: none;
     }

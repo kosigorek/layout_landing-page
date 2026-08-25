@@ -1,12 +1,14 @@
 .main {
-  display: grid;
-  row-gap: 100px;
-  padding-block: 100px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  padding-block: 30px;
 
   @include contentPaddingInLine;
 
-  @include onTablet {
-    padding-block: 140px;
-    row-gap: 140px;
+  @include onMobile {
+    padding-block: 20px;
+    row-gap: 20px;
   }
 }
+

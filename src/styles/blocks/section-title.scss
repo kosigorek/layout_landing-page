@@ -1,20 +1,18 @@
-@import '../utils/variables';
-@import '../utils/mixins';
-
 .section-title {
-  margin: 0;
-  margin-bottom: 32px;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 32px;
-  text-align: center;
-  letter-spacing: -1.5px;
+ margin: 0;
+ margin-bottom: 32px;
+ font-weight: 700;
+ font-size: 32px;
+ line-height: 32px;
+ text-align: center;
+ letter-spacing: -1.5px;
 
-  @include onTablet {
-    font-size: 48px;
+
+   @include onTablet {
+  font-size: 48px;
   }
 
   @include onDesktop {
-    font-size: 48px;
+  font-size: 48px;
   }
 }

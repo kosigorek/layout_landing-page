@@ -2,15 +2,6 @@
 @import '../utils/mixins';
 
 .explore {
-  padding: 80px 0;
-
-  @include onTabletOnly {
-    padding: 60px 0;
-  }
-
-  @include onMobile {
-    padding: 40px 0;
-  }
 
   &__title {
     font-family: $font-title;
@@ -84,6 +75,7 @@
     margin-bottom: 12px;
 
     @include onMobile {
+
       margin-bottom: 8px;
     }
   }

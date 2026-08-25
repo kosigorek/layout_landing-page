@@ -68,10 +68,10 @@
     <nav class="menu__nav">
       <ul class="menu__list">
         <li class="menu__item"><a href="#" class="menu__link">HOME</a></li>
-        <li class="menu__item"><a href="#" class="menu__link menu__link--active">ABOUT US</a></li>
-        <li class="menu__item"><a href="#" class="menu__link">NOW ON VIEW</a></li>
-        <li class="menu__item"><a href="#" class="menu__link">EXPLORE ONLINE</a></li>
-        <li class="menu__item"><a href="#" class="menu__link">CONTACTS</a></li>
+        <li class="menu__item"><a href="#hours" class="menu__link menu__link--active">ABOUT US</a></li>
+        <li class="menu__item"><a href="#on-view" class="menu__link">NOW ON VIEW</a></li>
+        <li class="menu__item"><a href="#explore" class="menu__link">EXPLORE ONLINE</a></li>
+        <li class="menu__item"><a href="#contacts" class="menu__link">CONTACTS</a></li>
       </ul>
     </nav>
 
@@ -173,6 +173,7 @@
     alt="Portrait"
     class="on-view__img on-view__img--old-masters-right"
   >
+  </div>
 </div>
         <h3 class="on-view__item-title">A NEW LOOK AT OLD MASTERS</h3>
         <p class="on-view__item-date">DECEMBER 12, 2020 - THROUGH SPRING 2023</p>
@@ -200,19 +201,18 @@
     class="on-view__img on-view__img--ballerina"
   >
 </div>
+</div>
         <h3 class="on-view__item-title">INSPIRING WALT DISNEY: THE ANIMATION OF FRENCH DECORATIVE ARTS</h3>
         <p class="on-view__item-date">DECEMBER 10, 2021 - MARCH 6, 2022</p>
       </article>
-    </div>
 
-    <!-- Button -->
     <div class="on-view__actions">
       <a href="#" class="on-view__button">VIEW ALL EXHIBITIONS</a>
     </div>
   </div>
 </section>
 
-      <section class="explore section">
+      <section class="explore section" id="explore">
   <div class="container">
     <h2 class="section__title explore__title">MORE TO EXPLORE<br>ONLINE</h2>
 
@@ -256,24 +256,38 @@
 
     <div class="contacts__grid">
       <div class="contacts__info">
-        <div class="contacts__location-block">
-          <h3 class="contacts__location-name">THE MET FIFTH AVENUE</h3>
-          <p class="contacts__label">PHONE</p>
-          <a href="tel:+12125357710" class="contacts__phone">+1 212-535-7710</a>
-          <p class="contacts__label">ADDRESS</p>
-          <p class="contacts__address">1000 FIFTH AVENUE<br>NEW YORK, NY 10028</p>
-        </div>
+  <div class="contacts__location-block">
+    <h3 class="contacts__location-name">THE MET FIFTH AVENUE</h3>
+    <p class="contacts__label">PHONE</p>
+    <a href="tel:+12125357710" class="contacts__phone contacts__link">+1 212-535-7710</a>
+    <p class="contacts__label">ADDRESS</p>
+    <a
+      href="https://maps.google.com/?q=1000+Fifth+Avenue+New+York+NY+10028"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="contacts__address contacts__link"
+    >
+      1000 FIFTH AVENUE<br>NEW YORK, NY 10028
+    </a>
+  </div>
 
-        <div class="contacts__location-block">
-          <h3 class="contacts__location-name">THE MET CLOISTERS</h3>
-          <p class="contacts__label">Phone</p>
-          <a href="tel:+12129233700" class="contacts__phone">+1 212-923-3700</a>
-          <p class="contacts__label">ADDRESS</p>
-          <p class="contacts__address">99 MARGARET CORBIN DRIVE<br>FORT TRYON PARK<br>NEW YORK, NY 10040</p>
-        </div>
-      </div>
+  <div class="contacts__location-block">
+    <h3 class="contacts__location-name">THE MET CLOISTERS</h3>
+    <p class="contacts__label">PHONE</p>
+    <a href="tel:+12129233700" class="contacts__phone contacts__link">+1 212-923-3700</a>
+    <p class="contacts__label">ADDRESS</p>
+    <a
+      href="https://maps.google.com/?q=99+Margaret+Corbin+Drive+Fort+Tryon+Park+New+York+NY+10040"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="contacts__address contacts__link"
+    >
+      99 MARGARET CORBIN DRIVE<br>FORT TRYON PARK<br>NEW YORK, NY 10040
+    </a>
+  </div>
+</div>
 
-      <form class="contacts__form form" action="#" method="POST">
+      <form class="contacts__form form" onsubmit="this.reset(); return false;">
         <div class="form__group">
           <input type="text" class="form__input" placeholder="NAME" autocomplete="name" required>
         </div>

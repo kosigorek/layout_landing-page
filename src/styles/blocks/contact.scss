@@ -2,15 +2,6 @@
 @import '../utils/mixins';
 
 .contacts {
-  padding: 80px 0;
-
-  @include onTabletOnly {
-    padding: 60px 0;
-  }
-
-  @include onMobile {
-    padding: 40px 0;
-  }
 
   &__title {
     font-family: $font-title;
@@ -91,6 +82,20 @@
   &__phone {
     display: inline-block;
     text-decoration: none;
+  }
+
+  &__address {
+    display: inline-block;
+    text-decoration: none;
+  }
+
+
+  &__link {
+    transition: opacity $effectDuration ease, color $effectDuration ease;
+
+    &:hover {
+      opacity: 0.7; // або колір з вашого макету: color: $color-red;
+    }
   }
 
   &__form {

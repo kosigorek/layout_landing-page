@@ -2,15 +2,6 @@
 @import '../utils/mixins';
 
 .on-view {
-  padding: 80px 0;
-
-  @include onTabletOnly {
-    padding: 60px 0;
-  }
-
-  @include onMobile {
-    padding: 40px 0;
-  }
 
   &__header {
     text-align: center;
@@ -112,11 +103,7 @@
     height: 100%;
     object-fit: cover;
     display: block;
-    transition: transform 0.3s ease;
 
-  &:hover {
-    transform: scale(1.04);
-  }
 
     &--old-masters-left {
       @include onMobile {
