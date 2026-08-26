@@ -15,7 +15,7 @@
     margin-bottom: 56px;
 
     @include onMobile {
-      font-size: 32x;
+      font-size: 32px;
       margin-bottom: 32px;
     }
   }
@@ -28,6 +28,7 @@
     @include onTabletOnly {
       grid-template-columns: 1fr;
       gap: 48px;
+      justify-items: center;
     }
 
     @include onMobile {
@@ -40,6 +41,10 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+
+    @include onTabletOnly {
+      max-width: 392px; // Фіксуємо ширину картки під розмір з Figma
+    }
   }
 
   &__image-wrapper {
@@ -47,6 +52,12 @@
     aspect-ratio: 1 / 1;
     margin-bottom: 24px;
     overflow: hidden;
+    cursor: pointer;
+
+    @include onTabletOnly {
+      height: 387px; // Точна висота зображення для планшета
+      aspect-ratio: auto;
+    }
 
     @include onMobile {
       margin-bottom: 16px;

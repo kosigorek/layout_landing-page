@@ -45,12 +45,18 @@
   }
 
   &__title {
+    margin: 0;
     font-family: $font-title;
     font-size: 48px;
     font-weight: 700;
     line-height: 48px;
     letter-spacing: -1.5px;
     color: $color-dark;
+
+    @include onTabletOnly {
+      font-size: 36px;
+      line-height: 36px;
+    }
 
     @include onMobile {
       font-size: 32px;

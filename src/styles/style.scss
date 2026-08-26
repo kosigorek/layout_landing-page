@@ -21,5 +21,10 @@
 .contact {
   @include section-spacing;
 }
+h2,
+.section__title {
+  margin-top: 0;
+   // контролюємо відступ тільки через padding/gap секції
+}
 
 
